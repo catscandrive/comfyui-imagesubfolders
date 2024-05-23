@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-imagesubfolders"
+description = "Adds an Image Loader node that also shows images in subfolders of the default input directory"
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/catscandrive/comfyui-imagesubfolders"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-imagesubfolders"
+Icon = ""
