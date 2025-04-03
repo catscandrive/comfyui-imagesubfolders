@@ -6,7 +6,6 @@ import hashlib
 from PIL import Image, ImageOps
 from PIL.PngImagePlugin import PngInfo
 import numpy as np
-import re
 
 class LoadImage:
     @classmethod
@@ -22,8 +21,7 @@ class LoadImage:
             for file in files:
                 file_path = os.path.relpath(os.path.join(root, file), start=input_dir)
                 file_path = file_path.replace("\\", "/")  # so the filename is processed correctly in widgets.js
-                if not re.search('^\._', file):
-                    file_list.append(file_path)
+                file_list.append(file_path)
 
         return {"required":
                     {"image": (sorted(file_list), {"image_upload": True})},
